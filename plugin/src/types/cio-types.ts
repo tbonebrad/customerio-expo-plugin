@@ -116,6 +116,11 @@ export type CustomerIOPluginPushNotificationOptions = {
   provider?: 'apn' | 'fcm';
   googleServicesFile?: string;
   useRichPush?: boolean;
+  /**
+   * Optional bundle identifier for the Notification Service Extension target.
+   * If not provided, defaults to `${ios.bundleIdentifier}.richpush`.
+   */
+  richPushBundleId?: string;
   autoFetchDeviceToken?: boolean;
   autoTrackPushEvents?: boolean;
   showPushAppInForeground?: boolean;

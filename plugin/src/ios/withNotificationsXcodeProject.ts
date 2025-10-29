@@ -208,7 +208,7 @@ const addRichPushXcodeProj = async (
     CIO_NOTIFICATION_TARGET_NAME,
     'app_extension',
     CIO_NOTIFICATION_TARGET_NAME,
-    `${bundleIdentifier}.richpush`
+      options.pushNotification?.richPushBundleId ?? `${bundleIdentifier}.richpush`
   );
 
   // Add build phases to the new target
